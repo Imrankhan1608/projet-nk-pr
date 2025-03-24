@@ -1,0 +1,62 @@
+        /* Style du conteneur */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style du bouton */
+        .dropbtn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Style du menu déroulant */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        /* Style des liens du menu */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Changer la couleur au survol */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Afficher le menu au survol */
+        .dropdown:hover .dropdown-content, 
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
